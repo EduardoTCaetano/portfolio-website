@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --header-height: 3rem;
+    --hue: 0;
+    --sat: 0%;
+    --logo-color: hsl(var(--hue), var(--sat), 100%);
+    --title-color: #B8C2CC;
+    --white-color: #fff;
+    --text-color: #738491;
+    --body-color: #222121;
+    --body-font: "Poppins", sans-serif;
+    --container-color: white;
+  
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+    --tiny-font-size: 0.625rem;
+  
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    --mb-0-25: 0.25em;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+  
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--white-color);
+    line-height: 1.7;
+    background-image: url(../src/assets/bg-texture.png);
+    margin: 0 0 var(--header-height) 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--white-color);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*  */
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section__title {
+    font-size: var(--h1-font-size);
+    text-transform: uppercase;
+}
+
+.section__subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+    opacity: 0.6;
+  }
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/* LAYOUT */
+
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 968px) {
+    :root {
+      --big-font-size: 3rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 0.875rem;
+      --smaller-font-size: .813rem;
+    }
+  }
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
