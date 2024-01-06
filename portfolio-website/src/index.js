@@ -2,12 +2,7 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import './index.css'
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ProjectPage from './Routes/ProjectPage/ProjectPage';
-import Home from './App';
+
 
 ReactDOM.render(<App/>, document.querySelector("#root"))
 
@@ -58,24 +53,3 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
-const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <App/>
-    },
-    {
-      path: "/project/:id",
-      element: <ProjectPage/>
-    },
-    {
-      path: "*",
-      element: <Home/>
-    },
-  ])
-  
-  const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(
-    <React.StrictMode>
-      <RouterProvider router={router}/>
-    </React.StrictMode>
-  );
