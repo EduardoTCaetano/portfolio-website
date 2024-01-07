@@ -48,7 +48,13 @@ export class Skills extends Component {
                   </div>
               </article>
 
-              
+              <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+                <div>
+                  <h4>Angular</h4>
+                  <small>Intermediario</small>
+                  </div>
+              </article>
             </div>
           </div>
 
@@ -67,14 +73,6 @@ export class Skills extends Component {
               <BsPatchCheckFill className='experience__details-icon'/>
                 <div>
                   <h4>NodeJS</h4>
-                  <small>Intermediario</small>
-                  </div>
-              </article>
-
-              <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-                <div>
-                  <h4>Angular</h4>
                   <small>Intermediario</small>
                   </div>
               </article>
