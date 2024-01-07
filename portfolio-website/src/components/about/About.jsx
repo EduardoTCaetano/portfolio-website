@@ -14,7 +14,7 @@ const About = () => {
         <img src={eu} alt="" className="about__img" />
 
         <div className="about__data">
-          <p className="about__description">Atualmente estou no 5º ano do modulo de Analise e Desenvolvimento de Sistemas (AMS) na Fatec Taquaritinga.</p>
+          <p className="about__description">Atualmente estou no cursando 2º ano do curso de Analise e Desenvolvimento de Sistemas (AMS) na Fatec Taquaritinga, tendo o ensino técnico concluído na Etec/Fatec Taquaritinga.</p>
 
           <div className="about__info">
             <div className='about__info-title-bg'>
