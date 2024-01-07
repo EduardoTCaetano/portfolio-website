@@ -14,7 +14,7 @@ export class Skills extends Component {
 
         <div className="container experience__container">
           <div className="experience__backend">
-            <h3>Desenvolvimento Backend</h3>
+            <h3>Desenvolvimento Frontend</h3>
             <div className="experience__content">
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon'/>
@@ -53,7 +53,7 @@ export class Skills extends Component {
           </div>
 
           <div className="experience__frontend">
-            <h3>Desenvolvimento Frontend</h3>  
+            <h3>Desenvolvimento Backend</h3>  
             <div className="experience__content">
               <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
