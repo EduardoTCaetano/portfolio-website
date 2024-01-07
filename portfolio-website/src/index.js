@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom'
 import App from './App'
 import './index.css'
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
 
 ReactDOM.render(<App/>, document.querySelector("#root"))
@@ -33,18 +32,6 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
- var swiper = new Swiper(".portfolio__container", {
-      cssMode: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      mousewheel: true,
-      keyboard: true,
-    });
 
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');

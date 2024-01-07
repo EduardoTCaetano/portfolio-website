@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import {BsPatchCheckFill} from 'react-icons/bs'
 import './skills.css'

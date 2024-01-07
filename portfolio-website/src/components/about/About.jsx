@@ -1,5 +1,4 @@
 import React from 'react'
-import photo from "../../assets/profile.png";
 import eu from "../../assets/eu.jpg";
 
 import './about.css'

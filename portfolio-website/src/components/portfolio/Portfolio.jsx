@@ -1,14 +1,15 @@
 import React from 'react'
 import './portfolio.css'
 import './swiper-bundle.min.css'
+import './swiper-bundle.min.js'
 
 import Eu from "../../assets/eu.jpg";
-import photo from "../../assets/profile.png";
 import BwShop from "../../assets/BWShop.jpeg";
 
 
 const Portfolio = () => {
   return (
+    
     <section className="portfolio section" id="portfolio">
       <h2 className="section__title">Meu Portfólio</h2>
       <span className="section__subtitle">Meus projetos</span>
