@@ -14,7 +14,7 @@ const About = () => {
         <img src={eu} alt="" className="about__img" />
 
         <div className="about__data">
-          <p className="about__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium fugiat nemo blanditiis atque optio, nesciunt ad nulla harum deleniti nam velit, tenetur aut dignissimos cum eveniet placeat iure labore ipsa. lore</p>
+          <p className="about__description">Atualmente estou no 5º ano do modulo de Analise e Desenvolvimento de Sistemas (AMS) na Fatec Taquaritinga.</p>
 
           <div className="about__info">
             <div className='about__info-title-bg'>
