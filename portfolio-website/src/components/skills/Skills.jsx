@@ -36,7 +36,7 @@ export class Skills extends Component {
                 <BsPatchCheckFill className='experience__details-icon'/>
                   <div>
                     <h4>React</h4>
-                    <small>Básico</small>
+                    <small>Intermediario</small>
                   </div>
               </article>
 
@@ -67,7 +67,7 @@ export class Skills extends Component {
               <BsPatchCheckFill className='experience__details-icon'/>
                 <div>
                   <h4>NodeJS</h4>
-                  <small>Básico</small>
+                  <small>Intermediario</small>
                   </div>
               </article>
 
