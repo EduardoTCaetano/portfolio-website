@@ -83,7 +83,7 @@ export class Skills extends Component {
               <BsPatchCheckFill className='experience__details-icon'/>
                 <div>
                   <h4>MVC</h4>
-                  <small>Básico</small>
+                  <small>Intermediario</small>
                   </div>
               </article>
             </div>
