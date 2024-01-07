@@ -52,6 +52,10 @@ const Footer = () => {
           >
             <i className="uil uil-instagram"></i>
           </a>
+
+          <a href="https://www.linkedin.com/in/eduardo-timossi-caetano-5091aa231/" target="_blank" className="home__social-icon">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
         </div>
 
         <span className="footer__copy">

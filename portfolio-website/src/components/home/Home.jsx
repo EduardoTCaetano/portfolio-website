@@ -9,7 +9,7 @@ const Home = () => {
         <div className="home__container container grid">
             <div className="home__content grid">
                 <div className="home__social">
-                    <a href="" target="_blank" className="home__social-icon">
+                    <a href="https://www.linkedin.com/in/eduardo-timossi-caetano-5091aa231/" target="_blank" className="home__social-icon">
                         <i class="uil uil-linkedin-alt"></i>
                     </a>
 
@@ -19,6 +19,10 @@ const Home = () => {
 
                     <a href="https://github.com/EduardoTCaetano" target="_blank" className="home__social-icon">
                         <i class="uil uil-github-alt"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/eduardo_caetano016/" className="footer__social-link" target={"_blank"}>
+                     <i className="uil uil-instagram"></i>
                     </a>
                 </div>
                 <div class="home__img">
