@@ -1,8 +1,6 @@
 import React from 'react'
 import './portfolio.css'
 import './swiper-bundle.min.css'
-import './swiper-bundle.min.js'
-
 import Eu from "../../assets/eu.jpg";
 import BwShop from "../../assets/BWShop.jpeg";
 

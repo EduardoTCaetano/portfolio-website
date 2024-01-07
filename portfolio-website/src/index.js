@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom'
 import App from './App'
 import './index.css'
-
+import Swiper from 'swiper/bundle';
 
 ReactDOM.render(<App/>, document.querySelector("#root"))
 
@@ -32,7 +32,21 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-
+ const swiper = new Swiper(".portfolio__container", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class

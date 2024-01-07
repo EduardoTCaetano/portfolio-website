@@ -1,5 +1,6 @@
 import React from 'react'
 import eu from "../../assets/eu.jpg";
+import MyCv from "../about/EduardoCaetano-Currículo.pdf";
 
 import './about.css'
 
@@ -33,7 +34,7 @@ const About = () => {
           </div>
 
           <div className="about__buttons">
-            <a download="" href="" className="button button--flex">
+            <a href={MyCv} download="EduardoCaetano-Currículo.pdf" target="iframe_download" className="button button--flex">
               Baixar CV <i class="uil uil-download-alt button__icon"></i>
             </a>
           </div>
