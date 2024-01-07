@@ -1,7 +1,7 @@
 import React from 'react'
 import './portfolio.css'
 import './swiper-bundle.min.css'
-import Eu from "../../assets/eu.jpg";
+import LogoPortfolio from "../../assets/Eduardo-Portfolio.jpeg";
 import BwShop from "../../assets/BWShop.jpeg";
 
 
@@ -17,7 +17,7 @@ const Portfolio = () => {
         <div class="swiper-wrapper">
                       {/* Projeto 1 */}
           <div className="portfolio__content grid swiper-slide">
-            <img src={Eu} alt="" className="portfolio__img" />
+            <img src={LogoPortfolio} alt="" className="portfolio__img" />
             <div className="portfolio__data">
               <h3 className="portfolio__title">Portfólio</h3>
               <p className="portfolio__description">Este é meu projeto portfólio desenvolvido com o framework ReactJs</p>
