@@ -54,6 +54,7 @@
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    cursor: pointer;
 }
 
 .button:hover {
