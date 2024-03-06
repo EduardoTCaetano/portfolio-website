@@ -25,7 +25,7 @@
 .experience__details {
     display: flex;
     gap: 1rem;
-    color: var(--title-color);
+    color: var(--white-color);
 }
 
 .experience__details-icon {

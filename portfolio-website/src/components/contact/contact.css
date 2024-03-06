@@ -1,3 +1,5 @@
+
+
 .contact__container{
     row-gap: 3rem;
 }
@@ -10,18 +12,19 @@
 
 .contact__icon{
     font-size: 2rem;
-    color: var(--text-color);
+    color: var(--white-color);
     margin-right: var(--mb-0-75);
 }
 
 .contact__title{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
+    color: var(--white-color);
 }
 
 .contact__subtitle{
     font-size: var(--small-font-size);
-    color: var(--text-color-alt);
+    color: var(--white-color);
 }
 
 .contact__content{
@@ -55,6 +58,8 @@
     border-radius: .5rem;
     font-weight: var(--font-medium);
     cursor: pointer;
+    border: none;
+    box-shadow: 0 0 5px var(--title-color);
 }
 
 .button:hover {

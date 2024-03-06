@@ -93,6 +93,7 @@ ul {
 
   .section__title {
     font-size: var(--h1-font-size);
+    color: var(--white-color);
     text-transform: uppercase;
 }
 

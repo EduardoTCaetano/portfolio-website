@@ -27,10 +27,7 @@ const About = () => {
               <span className="about__info-name">Projetos <br /> WebAPI </span>
             </div>
 
-            <div className='about__info-title-bg'>
-              <span className="about__info-title">0</span>
-              <span className="about__info-name">Anos <br /> experiência </span>
-            </div>
+            
           </div>
 
           <div className="about__buttons">
