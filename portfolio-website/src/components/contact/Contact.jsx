@@ -46,14 +46,10 @@ const Contact = () => {
   return (
   
     <section className="contact section" id="contact"> 
-        <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-20, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
         <h2 className="section__title">Fale comigo!</h2>
         <span className="section__subtitle">Entrar em contato</span>
-        </motion.div>
-        <ToastContainer toastStyle={{ color: "white", backgroundColor: "#212121" }}/>
         <div className="contact__container container grid">
           <div>
-          <motion.div initial={{ opacity: 0 }} whileInView={{ x: [-20, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
             <div className="contact__information">
               <i class="uil uil-phone contact__icon"></i>
 
@@ -79,14 +75,9 @@ const Contact = () => {
                 <span className="contact__subtitle">Escreva abaixo</span>
                </div>
               </div>
-              </motion.div>
 
           </div>
-          <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ x: [20, 0], opacity: 1 }}
-              transition={{ duration: 0.8 }}
-            >
+             
           <form ref={form} action='' onSubmit={sendEmail} className="contact__form grid">
               
                 
@@ -135,7 +126,6 @@ const Contact = () => {
                     Send
                   </button>
               </form>
-            </motion.div>
           
         </div>
     </section>

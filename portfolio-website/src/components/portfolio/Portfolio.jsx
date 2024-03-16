@@ -10,14 +10,10 @@ const Portfolio = () => {
   return (
     
     <section className="portfolio section" id="portfolio">
-      <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-20, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
       <h2 className="section__title">Meu Portfólio</h2>
       <span className="section__subtitle">Meus projetos</span>
-      </motion.div>
-
-      <motion.div initial={{ opacity: 0 }} whileInView={{ x: [-20, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
       <div className="portfolio__container container swiper-container">
-        
+  
         <div class="swiper-wrapper">
                       {/* Projeto 1 */}
           <div className="portfolio__content grid swiper-slide">
@@ -63,8 +59,6 @@ const Portfolio = () => {
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      </motion.div>
-
     </section>
     
   )

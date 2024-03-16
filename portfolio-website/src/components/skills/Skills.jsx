@@ -10,13 +10,9 @@ export class Skills extends Component {
   render() {
     return (
       <section className="skills section" id="skills">
-        <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-20, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
-
         <h2 className="section__title">Skills</h2>
         <span className="section__subtitle">Minhas skills</span>
-        </motion.div>
         <div className="container experience__container">
-        <motion.div initial={{ opacity: 0 }} whileInView={{ x: [-20, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
 
           <div className="experience__backend">
             <h3>Desenvolvimento Frontend</h3>
@@ -61,8 +57,6 @@ export class Skills extends Component {
               </article>
             </div>
           </div>
-          </motion.div>
-          <motion.div initial={{ opacity: 0 }} whileInView={{ x: [20, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
           <div className="experience__backend">
             <h3>Desenvolvimento Backend</h3>  
             <div className="experience__content">
@@ -92,7 +86,6 @@ export class Skills extends Component {
               </article>
               </div>
             </div>
-           </motion.div>
          </div>
       </section>
       
