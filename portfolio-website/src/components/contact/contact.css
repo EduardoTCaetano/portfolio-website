@@ -161,3 +161,22 @@
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__left__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .contact__row {
+    gap: 1px;
+  }
+}
