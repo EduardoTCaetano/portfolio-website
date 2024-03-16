@@ -37,7 +37,6 @@ const Home = () => {
                 </motion.div>
                 </div>
                 </div>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ x: [40, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
 
                 <div className="home__data">
                     
@@ -48,7 +47,6 @@ const Home = () => {
                         Contate-me <i class="uil uil-message button__icon"></i> 
                     </a>
                 </div>   
-                </motion.div>
                   
             </div>
 
