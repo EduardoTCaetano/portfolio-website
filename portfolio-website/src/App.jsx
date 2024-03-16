@@ -6,7 +6,7 @@ import Skills from './components/skills/Skills.jsx'
 import Portfolio from './components/portfolio/Portfolio.jsx'
 import Contact from './components/contact/Contact.jsx'
 import Footer from './components/footer/Footer.jsx'
-import Scrollup from './components/experience/Scrollup.jsx'
+import Scrollup from './components/scrollup/Scrollup.jsx'
 import "../src/index.css";
 
 const App = () => {
