@@ -119,7 +119,6 @@
 
     .home__img img {
         background-repeat: no-repeat;
-        animation: float 4s ease-in-out infinite;
     }
 }
   
