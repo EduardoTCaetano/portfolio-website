@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.css'
 import fotocomfundo from "../../assets/fotocomfundo.jpg";
+import { motion } from "framer-motion";
 
 
 const Home = () => {
@@ -8,6 +9,8 @@ const Home = () => {
     <section className="home section" id="home">
         <div className="home__container container grid">
             <div className="home__content grid">
+            <motion.div initial={{ opacity: 0 }} whileInView={{ x: [-50, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
+
                 <div className="home__social">
                     <a href="https://www.linkedin.com/in/eduardo-timossi-caetano-5091aa231/" target="_blank" className="home__social-icon">
                         <i class="uil uil-linkedin-alt"></i>
@@ -25,13 +28,17 @@ const Home = () => {
                      <i className="uil uil-instagram"></i>
                     </a>
                 </div>
+                </motion.div>
+
                 <div class="home__img">
                 <div className="home__container container grid">
-             <img src={fotocomfundo} alt="" className="about__img" />
-
+                <motion.div initial={{ opacity: 0 }} whileInView={{ x: [50, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
+                <img src={fotocomfundo} alt="" className="about__img" />
+                </motion.div>
                 </div>
                 </div>
 
+                <motion.div initial={{ opacity: 0 }} whileInView={{ x: [-50, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
                 <div className="home__data">
                     <h1 className="home__title">Olá, eu sou o Eduardo Caetano</h1>
                     <h3 className="home__subtitle">Análise e Desenvolvimento de Sistemas</h3>
@@ -39,8 +46,10 @@ const Home = () => {
                     <a href="#contact" className="button button--flex">
                         Contate-me <i class="uil uil-message button__icon"></i> 
                     </a>
-                </div>
+                </div>                
+                </motion.div>
             </div>
+
 
             <div className="home__scroll">
                 <a href="#about" className="home__scroll-button button--flex">

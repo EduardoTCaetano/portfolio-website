@@ -5,6 +5,7 @@
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
+    animation: headerTop 1s normal forwards;
 }
 
 .nav {
@@ -34,10 +35,28 @@
     color: var(--text-color);
 }
 
+@keyframes headerTop {
+  0% {
+      transform: translateY(-100px);
+  }
+}
+
 @media screen and (max-width: 767px) {
+
+  @keyframes headerTop {
+    0% {
+        transform: translateY(100px);
+    }
+}
+header {
+  top: initial;
+  bottom: 0;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  animation: headerTop 1.1s normal forwards;
+}
     .nav__menu {
         position: fixed;
-        bottom: -100%;
+        bottom: -200vh;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
@@ -47,6 +66,14 @@
         transition: .3s;
     }
   }
+
+  .show-menu {
+    bottom: 0;
+}
+  .nav__toggle {
+    display: block;
+  }
+
 
   .nav__list {
     grid-template-columns: repeat(3, 1fr);
@@ -87,8 +114,5 @@
     opacity: 0.6;
   }
 
-  .show-menu {
-    bottom: 0;
-  }
 
   

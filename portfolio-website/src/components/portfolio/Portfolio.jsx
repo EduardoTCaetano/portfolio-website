@@ -3,15 +3,19 @@ import './portfolio.css'
 import './swiper-bundle.min.css'
 import LogoPortfolio from "../../assets/Eduardo-Portfolio.jpeg";
 import BwShop from "../../assets/BWShop.jpeg";
+import { motion } from 'framer-motion';
 
 
 const Portfolio = () => {
   return (
     
     <section className="portfolio section" id="portfolio">
+      <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-50, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
       <h2 className="section__title">Meu Portfólio</h2>
       <span className="section__subtitle">Meus projetos</span>
+      </motion.div>
 
+      <motion.div initial={{ opacity: 0 }} whileInView={{ x: [-50, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
       <div className="portfolio__container container swiper-container">
         
         <div class="swiper-wrapper">
@@ -51,7 +55,6 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-
         <div class="swiper-button-next">
             <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
         </div>
@@ -60,7 +63,8 @@ const Portfolio = () => {
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      
+      </motion.div>
+
     </section>
     
   )

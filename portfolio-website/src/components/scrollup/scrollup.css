@@ -8,6 +8,8 @@
     border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
+    animation: float 2s ease-in-out infinite;
+
 }
 
 .scrollup:hover{
@@ -21,4 +23,18 @@
 
 .show-scroll{
     bottom: 5rem;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }

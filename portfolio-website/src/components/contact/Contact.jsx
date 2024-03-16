@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const form = useRef();
@@ -44,12 +45,15 @@ const Contact = () => {
 
   return (
   
-    <section className="contact section" id="contact">
+    <section className="contact section" id="contact"> 
+        <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-50, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
         <h2 className="section__title">Fale comigo!</h2>
         <span className="section__subtitle">Entrar em contato</span>
+        </motion.div>
         <ToastContainer toastStyle={{ color: "white", backgroundColor: "#212121" }}/>
         <div className="contact__container container grid">
           <div>
+          <motion.div initial={{ opacity: 0 }} whileInView={{ x: [-50, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
             <div className="contact__information">
               <i class="uil uil-phone contact__icon"></i>
 
@@ -75,35 +79,64 @@ const Contact = () => {
                 <span className="contact__subtitle">Escreva abaixo</span>
                </div>
               </div>
+              </motion.div>
 
-           
           </div>
+          <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ x: [50, 0], opacity: 1 }}
+              transition={{ duration: 0.8 }}
+            >
           <form ref={form} action='' onSubmit={sendEmail} className="contact__form grid">
               
-              <div className="contact__inputs grid">
                 
-                <div className="contact__content">
-                  <label htmlFor=""  className="contact__label">Nome</label>
-                  <input type="text" name='name' className="contact__input" required />
+              <div className="contact__row">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="First Name"
+                    id="teste"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    required
+                  />
                 </div>
 
-                <div className="contact__content">
-                  <label htmlFor=""  className="contact__label">E-mail</label>
-                  <input type="email" name='email' className="contact__input" required />
-                </div>
-              </div>
-                <div className="contact__content">
-                  <label htmlFor=""   className="contact__label">Mensagem</label>
-                  <textarea type="text" name='message' id="" cols="0" rows="4" className="contact__input" required></textarea>
+                <div className="contact__row">
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    placeholder="Your phone number"
+                    required
+                  />
+                  <input type="email" placeholder="Email" required />
                 </div>
 
-                <div > 
-                  <button type="submit" onClick={sendNotify}className="button button--flex">
-                    Enviar
-                    <i class="uil uil-message button__icon"></i>
+                <div className="contact__row">
+                  <textarea
+                    placeholder="Message"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
+                <div className="contact__button">
+                 
+                </div>
+                <button
+                    className="contact-cta"
+                    type="submit"
+                    onClick={sendNotify}
+                  >
+                    Send
                   </button>
-                </div>
-          </form>
+              </form>
+            </motion.div>
+          
         </div>
     </section>
   )

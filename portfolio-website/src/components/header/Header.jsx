@@ -1,13 +1,17 @@
 import React from 'react'
 import './header.css'
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Header = () => {
+  const [Toggle, showMenu] = useState(false);
+
   return (
     <header className="header" id="header">
       <nav className="nav container">
         <a href="#" className="nav__logo">Eduardo Caetano</a>
 
-        <div className="nav__menu" id="nav-menu">
+        <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
               <a href="#home" className="nav__link active-link">
@@ -35,14 +39,17 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i> 
+
+          
+          <i
+            className="uil uil-times nav__close"
+            onClick={() => showMenu(!Toggle)}
+          ></i>
         </div>
 
-        <div className="nav__btns">
-          <div className="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i> 
+        <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
+            <i className="uil uil-apps"></i>
           </div>
-        </div>
       </nav>
     </header>
     

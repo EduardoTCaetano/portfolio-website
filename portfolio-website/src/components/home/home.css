@@ -13,7 +13,11 @@
     grid-template-columns: max-content;
     row-gap: 1rem;
 }
+.home__img img {
+    background-repeat: no-repeat;
 
+    animation: float 4s ease-in-out infinite;
+}
 .home__social-icon {
     font-size: 1.25rem;
     color: var(--white-color);
@@ -62,6 +66,7 @@
     margin-top: -42px;
     animation: float 2s ease-in-out infinite;
 
+    
 }
 
 .home__scroll-button {
@@ -117,17 +122,14 @@
 
 @keyframes float {
     0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
         transform: translateY(0px);
     }
 
     50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
         transform: translateY(-10px);
     }
 
     100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
         transform: translateY(0px);
     }
 }

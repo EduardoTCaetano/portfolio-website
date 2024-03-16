@@ -1,8 +1,21 @@
-
-
 .contact__container{
-    row-gap: 3rem;
+    row-gap: 5rem;
 }
+
+.contact__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 1100px;
+    gap: 2rem;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+  }
+  
 
 .contact__information{
     display: flex;
@@ -30,7 +43,7 @@
 .contact__content{
     border-radius: .5rem;
     padding: .75rem 1rem .25rem;
-    border: 2px solid var(--text-color-alt);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .contact__label{
@@ -39,16 +52,86 @@
     background: transparent;
     
 }
-
+.contact__row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .contact__row input {
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-family: "Fira Code", monospace;
+  }
+  
+  .contact__row textarea {
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    width: 320px;
+    background: #fff;
+    border-radius: 10px;
+    resize: none;
+    min-height: 150px;
+  }
+  
 .contact__input{
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--text-color-alt);
+    border: 1px solid rgb(255, 255, 255);
     color: var(--white-color);
     
 }
+
+.contact__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.contact-cta {
+  padding: 17px 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+.contact-cta:hover {
+  letter-spacing: 3px;
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgba(189, 189, 189, 0.178) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.contact-cta button:active {
+  letter-spacing: 3px;
+  background-color: rgb(0, 0, 0);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
 
 .button {
     display: inline-block;
