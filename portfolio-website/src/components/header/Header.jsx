@@ -1,5 +1,5 @@
-import React from 'react'
-import './header.css'
+import React from "react";
+import "./header.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -9,7 +9,9 @@ const Header = () => {
   return (
     <header className="header" id="header">
       <nav className="nav container">
-        <a href="#" className="nav__logo">Eduardo Caetano</a>
+        <a href="#" className="nav__logo">
+          Eduardo Caetano
+        </a>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
@@ -40,7 +42,6 @@ const Header = () => {
             </li>
           </ul>
 
-          
           <i
             className="uil uil-times nav__close"
             onClick={() => showMenu(!Toggle)}
@@ -48,12 +49,11 @@ const Header = () => {
         </div>
 
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
-            <i className="uil uil-apps"></i>
-          </div>
+          <i className="uil uil-apps"></i>
+        </div>
       </nav>
     </header>
-    
-    )
-}
+  );
+};
 
-export default Header
+export default Header;

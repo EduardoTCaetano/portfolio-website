@@ -1,77 +1,73 @@
-.contact__container{
-    row-gap: 5rem;
+.contact__container {
+  row-gap: 5rem;
 }
 
-
-.contact__information{
-    display: flex;
-    margin-bottom: var(--mb-2);
-    
+.contact__information {
+  display: flex;
+  margin-bottom: var(--mb-2);
 }
 
-.contact__icon{
-    font-size: 2rem;
-    color: var(--white-color);
-    margin-right: var(--mb-0-75);
+.contact__icon {
+  font-size: 2rem;
+  color: var(--white-color);
+  margin-right: var(--mb-0-75);
 }
 
-.contact__title{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    color: var(--white-color);
+.contact__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  color: var(--white-color);
 }
 
-.contact__subtitle{
-    font-size: var(--small-font-size);
-    color: var(--white-color);
+.contact__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--white-color);
 }
 
-.contact__content{
-    border-radius: .5rem;
-    padding: .75rem 1rem .25rem;
-    border: 1px solid rgb(255, 255, 255);
+.contact__content {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+  border: 1px solid rgb(255, 255, 255);
 }
 
-.contact__label{
-    font-size: var(--small-font-size);
-    color: var(--white-color);
-    background: transparent;
-    
+.contact__label {
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+  background: transparent;
 }
 .contact__row {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-  }
-  
-  .contact__row input {
-    border: none;
-    outline: none;
-    margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    font-family: "Fira Code", monospace;
-  }
-  
-  .contact__row textarea {
-    margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
-    width: 320px;
-    background: #fff;
-    border-radius: 10px;
-    resize: none;
-    min-height: 150px;
-  }
-  
-.contact__input{
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 1px solid rgb(255, 255, 255);
-    color: var(--white-color);
-    
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.contact__row input {
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-family: "Fira Code", monospace;
+}
+
+.contact__row textarea {
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  width: 320px;
+  background: #fff;
+  border-radius: 10px;
+  resize: none;
+  min-height: 150px;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  color: var(--white-color);
 }
 
 .contact__icon {
@@ -118,33 +114,32 @@
   transition: 100ms;
 }
 
-
 .button {
-    display: inline-block;
-    background-color: var(--text-color);
-    color: var(--white-color);
-    padding: 1rem;
-    border-radius: .5rem;
-    font-weight: var(--font-medium);
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 0 5px var(--title-color);
+  display: inline-block;
+  background-color: var(--text-color);
+  color: var(--white-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px var(--title-color);
 }
 
 .button:hover {
-    background-color: var(--text-color-alt);
-    transition: .3s;
+  background-color: var(--text-color-alt);
+  transition: 0.3s;
 }
 
 .button__icon {
-    font-size: 1.25rem;
-    margin-left: var(--mb-0-5);
-    transition: .3s;
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
 }
 
 .button--flex {
-    display: inline-flex;
-    align-items: center;
+  display: inline-flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
