@@ -15,7 +15,6 @@
 }
 .home__img img {
     background-repeat: no-repeat;
-    animation: float 4s ease-in-out infinite;
 }
 .home__social-icon {
     font-size: 1.25rem;
@@ -133,7 +132,6 @@
     top: initial;
     bottom: 0;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-    animation: headerTop 1.1s normal forwards;
   }
       .nav__menu {
           position: fixed;
