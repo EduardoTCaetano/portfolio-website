@@ -1,62 +1,64 @@
-.portfolio__container{
-    overflow: initial;
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
 }
 
-.portfolio__content{
-    padding: 0 1.5rem;
+.portfolio__item {
+    background-color: #4a4949;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
 }
 
-.portfolio__img{
-    width: 265px;
-    border-radius: .5rem;
-    justify-self: center;
+.portfolio__item:hover {
+    background-color: rgba(119, 119, 119, 0.797);
 }
 
-.portfolio__title{
-    font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-0-5);
+.portfolio__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
 }
 
-.portfolio__description{
-    margin-bottom: var(--mb-0-75);
+.portfolio__item h3 {
+    margin: 1.2 0 2rem;
+    color: var(--white-color);
 }
 
-.portfolio__button:hover .button__icon{
-    transform: translateX(.25rem);
+.portfolio__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.portfolio__button{
-    margin: 5px;
+.btn {
+    width:  max-content;
+    display: inline-block;
+    color: var(--white-color);
+    padding: 0.75 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--white-color);
+    transition: all 400ms ease;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after{
-    content: '';
-}
-
-.swiper-portfolio-icon{
-    font-size: 2rem;
+.btn:hover {
+    background-color: #fff;
     color: var(--text-color);
+    border-color: transparent;
 }
 
-.swiper-button-prev{
-    left: -.5rem;
+@media screen and (max-width: 1024px) {
+    .portfolio__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem
+    }
 }
 
-.swiper-button-next{
-    right: -.5rem;
-}
-
-.swiper-container-horizontal > .swiper-pagination-bullets{
-    bottom: -2.5rem;
-}
-
-.swiper-pagination-bullet-active{
-    background-color: var(--white-color);
-}
-
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination-bullet{
-    outline: none;
+@media screen and (max-width: 600px) {
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem
+    }
 }
