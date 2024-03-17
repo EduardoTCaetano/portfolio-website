@@ -46,10 +46,14 @@ const Contact = () => {
   return (
   
     <section className="contact section" id="contact"> 
+        <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-10, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
         <h2 className="section__title">Fale comigo!</h2>
         <span className="section__subtitle">Entrar em contato</span>
+        </motion.div>
         <div className="contact__container container grid">
           <div>
+
+          <motion.div initial={{ opacity: 0 }} whileInView={{ x: [-10, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
             <div className="contact__information">
               <i class="uil uil-phone contact__icon"></i>
 
@@ -75,24 +79,23 @@ const Contact = () => {
                 <span className="contact__subtitle">Escreva abaixo</span>
                </div>
               </div>
-
+              </motion.div>
           </div>
              
+          <motion.div initial={{ opacity: 0 }} whileInView={{ x: [10, 0], opacity: 1 }} transition={{ duration: 0.8 }}>
           <form ref={form} action='' onSubmit={sendEmail} className="contact__form grid">
-              
-                
               <div className="contact__row">
                   <input
                     type="text"
                     name="name"
-                    placeholder="First Name"
+                    placeholder="Primeiro Nome"
                     id="teste"
                     required
                   />
                   <input
                     type="text"
                     name="lastName"
-                    placeholder="Last Name"
+                    placeholder="Ultimo Nome"
                     required
                   />
                 </div>
@@ -100,12 +103,12 @@ const Contact = () => {
                 <div className="contact__row">
                   <input
                     type="number"
-                    name=""
+                    name="contact"
                     id=""
                     placeholder="Your phone number"
                     required
                   />
-                  <input type="email" placeholder="Email" required />
+                  <input type="email" placeholder="Email" name="email" required />
                 </div>
 
                 <div className="contact__row">
@@ -126,7 +129,7 @@ const Contact = () => {
                     Send
                   </button>
               </form>
-          
+              </motion.div>
         </div>
     </section>
   )

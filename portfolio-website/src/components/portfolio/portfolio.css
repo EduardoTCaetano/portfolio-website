@@ -36,11 +36,11 @@
     width:  max-content;
     display: inline-block;
     color: var(--white-color);
-    padding: 0.75 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
     border: 1px solid var(--white-color);
     transition: all 400ms ease;
+    padding: 0.75rem 1.2rem;
 }
 
 .btn:hover {

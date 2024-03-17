@@ -15,6 +15,7 @@
 }
 .home__img img {
     background-repeat: no-repeat;
+    animation: float 4s ease-in-out infinite;
 }
 .home__social-icon {
     font-size: 1.25rem;
