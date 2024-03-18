@@ -1,5 +1,5 @@
 import React from "react";
-import eu from "../../assets/eu.jpg";
+import eu from "../../assets/FotoPerfil.jpeg";
 import MyCv from "../about/EduardoCaetano-Currículo.pdf";
 import { useState } from "react";
 import { motion } from "framer-motion";
