@@ -61,20 +61,26 @@ const Home = () => {
           </motion.div>
 
           <div className="home__data">
-            <h1 className="home__title">Olá, eu sou o Eduardo Caetano</h1>
-            <h3 className="home__subtitle">
-              Análise e Desenvolvimento de Sistemas
-            </h3>
-            <p className="home__description">
-              Procuro ser um profissional comprometido e motivado, ansioso para
-              contribuir significativamente em um ambiente dinâmico e
-              desafiador. Meu objetivo é adentrar o mercado de trabalho e
-              desenvolver uma carreira bem-sucedida, onde posso aplicar minhas
-              habilidades e conhecimentos de maneira eficaz.
-            </p>
-            <a href="#contact" className="button button--flex">
-              Contate-me <i class="uil uil-message button__icon"></i>
-            </a>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ x: [-10, 0], opacity: 1 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="home__title">Olá, eu sou o Eduardo Caetano</h1>
+              <h3 className="home__subtitle">
+                Análise e Desenvolvimento de Sistemas
+              </h3>
+              <p className="home__description">
+                Procuro ser um profissional comprometido e motivado, ansioso
+                para contribuir significativamente em um ambiente dinâmico e
+                desafiador. Meu objetivo é adentrar o mercado de trabalho e
+                desenvolver uma carreira bem-sucedida, onde posso aplicar minhas
+                habilidades e conhecimentos de maneira eficaz.
+              </p>
+              <a href="#contact" className="button button--flex">
+                Contate-me <i class="uil uil-message button__icon"></i>
+              </a>{" "}
+            </motion.div>
           </div>
         </div>
 
