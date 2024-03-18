@@ -10,7 +10,7 @@ const Home = () => {
         <div className="home__content grid">
           <motion.div
             initial={{ opacity: 0 }}
-            whileInView={{ x: [-10, 0], opacity: 1 }}
+            whileInView={{ x: [-20, 0], opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
             <div className="home__social">
@@ -23,7 +23,7 @@ const Home = () => {
               </a>
 
               <a
-                href="https://wa.me/+5516981034830"
+                href="https://wa.me/+5516982034830"
                 target="_blank"
                 className="home__social-icon"
               >
@@ -50,7 +50,7 @@ const Home = () => {
 
           <motion.div
             initial={{ opacity: 0 }}
-            whileInView={{ x: [10, 0], opacity: 1 }}
+            whileInView={{ x: [-20, 0], opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
             <div class="home__img">
@@ -63,7 +63,7 @@ const Home = () => {
           <div className="home__data">
             <motion.div
               initial={{ opacity: 0 }}
-              whileInView={{ x: [-10, 0], opacity: 1 }}
+              whileInView={{ x: [20, 0], opacity: 1 }}
               transition={{ duration: 0.8 }}
             >
               <h1 className="home__title">Olá, eu sou o Eduardo Caetano</h1>

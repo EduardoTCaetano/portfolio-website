@@ -13,7 +13,7 @@ const About = () => {
     <section className="about section" id="about">
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ y: [-10, 0], opacity: 1 }}
+        whileInView={{ y: [-20, 0], opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
         <h2 className="section__title">Sobre mim</h2>
@@ -23,7 +23,7 @@ const About = () => {
       <div className="about__container container grid">
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ x: [-10, 0], opacity: 1 }}
+          whileInView={{ x: [-20, 0], opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
           <img src={eu} alt="" className="about__img" />
@@ -32,7 +32,7 @@ const About = () => {
         <div className="about__data">
           <motion.div
             initial={{ opacity: 0 }}
-            whileInView={{ x: [10, 0], opacity: 1 }}
+            whileInView={{ x: [20, 0], opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
             <p className="about__description">

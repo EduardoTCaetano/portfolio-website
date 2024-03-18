@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ y: [10, 0], opacity: 1 }}
+      whileInView={{ y: [20, 0], opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
       <footer className="footer">
@@ -43,7 +43,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://wa.me/+5516981034830"
+              href="https://wa.me/+5516982034830"
               className="footer__social-link"
               target={"_blank"}
             >

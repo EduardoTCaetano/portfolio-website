@@ -11,7 +11,7 @@ export class Skills extends Component {
       <section className="skills section" id="skills">
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ y: [-10, 0], opacity: 1 }}
+          whileInView={{ y: [-20, 0], opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
           <h2 className="section__title">Skills</h2>
@@ -20,7 +20,7 @@ export class Skills extends Component {
         <div className="container experience__container">
           <motion.div
             initial={{ opacity: 0 }}
-            whileInView={{ x: [-10, 0], opacity: 1 }}
+            whileInView={{ x: [-20, 0], opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
             <div className="experience__frontkend">
@@ -70,7 +70,7 @@ export class Skills extends Component {
 
           <motion.div
             initial={{ opacity: 0 }}
-            whileInView={{ x: [10, 0], opacity: 1 }}
+            whileInView={{ x: [20, 0], opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
             <div className="experience__backend">

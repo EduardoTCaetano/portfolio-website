@@ -9,7 +9,7 @@ const Portfolio = () => {
     <section className="portfolio section" id="portfolio">
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ y: [-10, 0], opacity: 1 }}
+        whileInView={{ y: [-20, 0], opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
         <h2 className="section__title">Meu Portfólio</h2>
@@ -18,7 +18,7 @@ const Portfolio = () => {
 
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ y: [10, 0], opacity: 1 }}
+        whileInView={{ y: [20, 0], opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
         <div className="container portfolio__container">

@@ -47,7 +47,7 @@ const Contact = () => {
     <section className="contact section" id="contact">
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ y: [-10, 0], opacity: 1 }}
+        whileInView={{ y: [-20, 0], opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
         <h2 className="section__title">Fale comigo!</h2>
@@ -57,7 +57,7 @@ const Contact = () => {
         <div>
           <motion.div
             initial={{ opacity: 0 }}
-            whileInView={{ x: [-10, 0], opacity: 1 }}
+            whileInView={{ x: [-20, 0], opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
             <div className="contact__information">
@@ -65,7 +65,7 @@ const Contact = () => {
 
               <div>
                 <h3 className="contact__title">Me ligue</h3>
-                <span className="contact__subtitle">+55 (16) 98103-4830</span>
+                <span className="contact__subtitle">+55 (16) 98203-4830</span>
               </div>
             </div>
 
@@ -74,7 +74,7 @@ const Contact = () => {
               <div>
                 <h3 className="contact__title">Envie um e-mail</h3>
                 <span className="contact__subtitle">
-                  eduardotimossi1101@hotmail.com
+                  eduardotimossi1201@hotmail.com
                 </span>
               </div>
             </div>
@@ -90,7 +90,7 @@ const Contact = () => {
 
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ x: [10, 0], opacity: 1 }}
+          whileInView={{ x: [20, 0], opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
           <form
