@@ -23,7 +23,7 @@ const Home = () => {
               </a>
 
               <a
-                href="https://wa.me/+5516982034830"
+                href="https://wa.me/+5516981034830"
                 target="_blank"
                 className="home__social-icon"
               >
