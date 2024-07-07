@@ -39,7 +39,7 @@ const Home = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/eduardo_caetano016/"
+                href="https://www.instagram.com/du.caetano016/"
                 className="footer__social-link"
                 target={"_blank"}
               >
