@@ -1,11 +1,9 @@
-/* Container para o Portfólio */
 .portfolio__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
 }
 
-/* Item do Portfólio */
 .portfolio__item {
   background-color: #4a4949;
   padding: 1.3rem;
@@ -34,7 +32,6 @@
   margin-bottom: 1rem;
 }
 
-/* Estilo do Botão */
 .btn {
   width: max-content;
   display: inline-block;
@@ -71,7 +68,6 @@
   border-color: transparent;
 }
 
-/* Modal */
 .modal {
   display: none; 
   position: fixed;
@@ -105,7 +101,6 @@
   overflow: auto; /* Ensure scroll if content overflows */
 }
 
-/* Fechar Botão */
 .close {
   color: #aaa;
   float: right;
@@ -122,7 +117,6 @@
   transition: all 0.3s;
 }
 
-/* Estilos Responsivos */
 @media screen and (max-width: 1024px) {
   .portfolio__container {
     grid-template-columns: 1fr 1fr;
@@ -139,14 +133,14 @@
 
 @media screen and (max-width: 768px) {
   .modal-content {
-    width: 95%; /* Increase width for smaller screens */
-    padding: 15px; /* Reduce padding */
+    width: 95%; 
+    padding: 15px; 
   }
 }
 
 @media screen and (max-width: 480px) {
   .modal-content {
-    width: 100%; /* Full width for very small screens */
-    padding: 10px; /* Further reduce padding */
+    width: 100%; 
+    padding: 10px; 
   }
 }

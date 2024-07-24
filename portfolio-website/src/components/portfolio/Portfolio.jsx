@@ -38,10 +38,7 @@ const Portfolio = () => {
             >
               Github
             </a>
-            <div
-              className="btn btn-info"
-              data-modal-target="portfolioModal"
-            >
+            <div className="btn btn-info" data-modal-target="portfolioModal">
               Mais Informações
             </div>
           </article>
@@ -70,10 +67,7 @@ const Portfolio = () => {
             >
               Github
             </a>
-            <div
-              className="btn btn-info"
-              data-modal-target="bwshopModal"
-            >
+            <div className="btn btn-info" data-modal-target="bwshopModal">
               Mais Informações
             </div>
           </article>
@@ -109,10 +103,7 @@ const Portfolio = () => {
             >
               Github
             </a>
-            <div
-              className="btn btn-info"
-              data-modal-target="blitzTechModal"
-            >
+            <div className="btn btn-info" data-modal-target="blitzTechModal">
               Mais Informações
             </div>
           </article>
@@ -148,17 +139,14 @@ const Portfolio = () => {
             <h2>Em andamento</h2>
             <h3>eShop</h3>
             <a
-              href="https://github.com/EduardoTCaetano/BlitzTech"
+              href="https://github.com/bootcampnet2024/eShop"
               className="btn"
               target="_blank"
               rel="noopener noreferrer"
             >
               Github
             </a>
-            <div
-              className="btn btn-info"
-              data-modal-target="eShopModal"
-            >
+            <div className="btn btn-info" data-modal-target="eShopModal">
               Mais Informações
             </div>
           </article>
@@ -167,22 +155,18 @@ const Portfolio = () => {
               <span className="close">&times;</span>
               <h2>Informações Adicionais</h2>
               <p>
-                Fui selecionado para participar do projeto eShop, uma iniciativa
-                de e-commerce desenvolvida no Bootcamp 2024. Estou contribuindo
-                ativamente em várias áreas-chave do projeto. Claro, aqui está um
-                resumo da minha atuação no projeto eShop a partir da seção
-                "Contribuições e Responsabilidades": Minha Atuação no Projeto
-                eShop Contribuições e Responsabilidades: Desenvolvimento de
-                Funcionalidades: Estou implementando novas funcionalidades e
-                integrando APIs externas para melhorar o eShop. Melhoria da
-                Interface de Usuário: Estou trabalhando para garantir uma
-                interface intuitiva e responsiva, além de adicionar efeitos
-                visuais e transições. Segurança e Autenticação: Foco na
-                implementação de práticas de segurança e na configuração do
-                sistema de autenticação. Testes e Qualidade: Realizo testes para
-                assegurar o bom funcionamento do sistema e ofereço feedback para
-                melhorias. Colaboração e Comunicação: Participo ativamente do
-                trabalho em equipe e contribuo para a documentação do projeto.
+                No projeto eShop, um e-commerce desenvolvido no Bootcamp 2024,
+                minhas principais responsabilidades incluem: Desenvolvimento de
+                Funcionalidades: Implemento novas funcionalidades e integro APIs
+                externas para aprimorar o eShop. Melhoria da Interface de
+                Usuário: Trabalho para tornar a interface mais intuitiva e
+                responsiva, adicionando efeitos visuais e transições. Segurança
+                e Autenticação: Foco na implementação de práticas de segurança e
+                na configuração do sistema de autenticação. Testes e Qualidade:
+                Realizo testes para garantir o bom funcionamento do sistema e
+                ofereço feedback para melhorias. Colaboração e Comunicação:
+                Participo ativamente do trabalho em equipe e contribuo para a
+                documentação do projeto.
               </p>
             </div>
           </div>
