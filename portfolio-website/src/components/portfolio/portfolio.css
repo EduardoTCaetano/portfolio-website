@@ -1,9 +1,11 @@
+/* Container para o Portfólio */
 .portfolio__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
 }
 
+/* Item do Portfólio */
 .portfolio__item {
   background-color: #4a4949;
   padding: 1.3rem;
@@ -22,7 +24,7 @@
 }
 
 .portfolio__item h3 {
-  margin: 1.2 0 2rem;
+  margin: 1.2rem 0 2rem;
   color: var(--white-color);
 }
 
@@ -32,6 +34,7 @@
   margin-bottom: 1rem;
 }
 
+/* Estilo do Botão */
 .btn {
   width: max-content;
   display: inline-block;
@@ -43,7 +46,6 @@
   padding: 0.75rem 1.2rem;
   margin-right: 0.5rem; 
   margin-bottom: 0.5rem; 
-
 }
 
 .btn:hover {
@@ -52,22 +54,24 @@
   border-color: transparent;
 }
 
-.btn btn-info {
-  color: white;
-  border: none;
+/* Estilo do Botão de Informações */
+.btn-info {
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
   display: inline-block;
   margin: 4px 9px;
   transition: all 400ms ease;
   cursor: pointer;
   border-radius: 0.4rem;
-  border: 1px solid var(--white-color);
-  width: max-content;
+  padding: 0.75rem 1.2rem;
 }
 
 .btn-info:hover {
   color: var(--text-color);
   border-color: transparent;
 }
+
+/* Modal */
 .modal {
   display: none; 
   position: fixed;
@@ -85,17 +89,23 @@
 .modal.show {
   display: flex; 
   opacity: 1; 
+  align-items: center; 
+  justify-content: center; 
 }
 
 .modal-content {
   background-color: #222121;
-  margin: 15% auto;
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 90%; /* Default width */
+  max-width: 600px; /* Maximum width for larger screens */
   border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  overflow: auto; /* Ensure scroll if content overflows */
 }
 
+/* Fechar Botão */
 .close {
   color: #aaa;
   float: right;
@@ -109,9 +119,10 @@
   color: rgb(255, 0, 0);
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s
+  transition: all 0.3s;
 }
 
+/* Estilos Responsivos */
 @media screen and (max-width: 1024px) {
   .portfolio__container {
     grid-template-columns: 1fr 1fr;
@@ -123,5 +134,19 @@
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 95%; /* Increase width for smaller screens */
+    padding: 15px; /* Reduce padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-content {
+    width: 100%; /* Full width for very small screens */
+    padding: 10px; /* Further reduce padding */
   }
 }
