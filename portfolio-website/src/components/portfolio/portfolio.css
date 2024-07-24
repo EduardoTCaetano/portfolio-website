@@ -41,12 +41,75 @@
   border: 1px solid var(--white-color);
   transition: all 400ms ease;
   padding: 0.75rem 1.2rem;
+  margin-right: 0.5rem; 
+  margin-bottom: 0.5rem; 
+
 }
 
 .btn:hover {
   background-color: #fff;
   color: var(--text-color);
   border-color: transparent;
+}
+
+.btn btn-info {
+  color: white;
+  border: none;
+  display: inline-block;
+  margin: 4px 9px;
+  transition: all 400ms ease;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  border: 1px solid var(--white-color);
+  width: max-content;
+}
+
+.btn-info:hover {
+  color: var(--text-color);
+  border-color: transparent;
+}
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); 
+  opacity: 0; 
+  transition: opacity 0.5s ease; 
+}
+
+.modal.show {
+  display: flex; 
+  opacity: 1; 
+}
+
+.modal-content {
+  background-color: #222121;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s
 }
 
 @media screen and (max-width: 1024px) {

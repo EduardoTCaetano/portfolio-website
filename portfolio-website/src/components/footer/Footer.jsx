@@ -51,7 +51,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://www.instagram.com/du.caetano016/"
+              href="https://www.instagram.com/eduardotcaetano/"
               className="footer__social-link"
               target={"_blank"}
             >
