@@ -15,7 +15,7 @@ const Home = () => {
           >
             <div className="home__social">
               <a
-                href="https://www.linkedin.com/in/eduardo-timossi-caetano-5091aa231/"
+                href="https://linkedin.com/in/eduardotcaetano"
                 target="_blank"
                 className="home__social-icon"
               >
@@ -39,7 +39,7 @@ const Home = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/eduardotcaetano/"
+                href="https://www.instagram.com/du.tcaetano/"
                 className="footer__social-link"
                 target={"_blank"}
               >

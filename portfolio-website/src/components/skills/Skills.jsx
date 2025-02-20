@@ -30,7 +30,7 @@ export class Skills extends Component {
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
                     <h4>HTML</h4>
-                    <small>Intermediario</small>
+                    <small>Avançado</small>
                   </div>
                 </article>
 
@@ -38,13 +38,21 @@ export class Skills extends Component {
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
                     <h4>CSS</h4>
-                    <small>Intermediario</small>
+                    <small>Avançado</small>
                   </div>
                 </article>
                 <article className="experience__details">
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
-                    <h4>React</h4>
+                    <h4>JAVASCRIPT</h4>
+                    <small>Avançado</small>
+                  </div>
+                </article>
+
+                <article className="experience__details">
+                  <BsPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>TYPESCRIPT</h4>
                     <small>Intermediario</small>
                   </div>
                 </article>
@@ -52,7 +60,7 @@ export class Skills extends Component {
                 <article className="experience__details">
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
-                    <h4>JavaScript</h4>
+                    <h4>ANGULAR</h4>
                     <small>Intermediario</small>
                   </div>
                 </article>
@@ -60,7 +68,7 @@ export class Skills extends Component {
                 <article className="experience__details">
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
-                    <h4>Angular</h4>
+                    <h4>REACT</h4>
                     <small>Intermediario</small>
                   </div>
                 </article>
@@ -79,6 +87,14 @@ export class Skills extends Component {
                 <article className="experience__details">
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
+                    <h4> .NET CORE </h4>
+                    <small>Intermediario - Avançado</small>
+                  </div>
+                </article>
+
+                <article className="experience__details">
+                  <BsPatchCheckFill className="experience__details-icon" />
+                  <div>
                     <h4>C#</h4>
                     <small>Intermediario</small>
                   </div>
@@ -87,7 +103,7 @@ export class Skills extends Component {
                 <article className="experience__details">
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
-                    <h4>NodeJS</h4>
+                    <h4>NODE.JS</h4>
                     <small>Intermediario</small>
                   </div>
                 </article>
@@ -95,8 +111,24 @@ export class Skills extends Component {
                 <article className="experience__details">
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
-                    <h4>MVC</h4>
-                    <small>Intermediario</small>
+                    <h4>JAVA</h4>
+                    <small>Básico - Intermediario</small>
+                  </div>
+                </article>
+
+                <article className="experience__details">
+                  <BsPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>PYTHON</h4>
+                    <small>Básico - Intermediario</small>
+                  </div>
+                </article>
+
+                <article className="experience__details">
+                  <BsPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>PHP</h4>
+                    <small>Básico - Intermediario</small>
                   </div>
                 </article>
               </div>

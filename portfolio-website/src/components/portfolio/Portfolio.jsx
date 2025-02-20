@@ -4,6 +4,8 @@ import LogoPortfolio from "../../assets/Eduardo-Portfolio.jpeg";
 import BwShop from "../../assets/BWShop.jpeg";
 import BTech from "../../assets/BlitzTech.jpg";
 import eShop from "../../assets/eShop.jpg";
+import Dev from "../../assets/devlinks.jpeg";
+
 
 import { motion } from "framer-motion";
 
@@ -93,8 +95,7 @@ const Portfolio = () => {
             <div className="portfolio__item-image">
               <img src={BTech} alt="BlitzTech" />
             </div>
-            <h2>Em andamento</h2>
-            <h3>BlitzTech</h3>
+            <h3>BuscaTech</h3>
             <a
               href="https://github.com/EduardoTCaetano/BlitzTech"
               className="btn"
@@ -136,7 +137,6 @@ const Portfolio = () => {
             <div className="portfolio__item-image">
               <img src={eShop} alt="eShop" />
             </div>
-            <h2>Em andamento</h2>
             <h3>eShop</h3>
             <a
               href="https://github.com/bootcampnet2024/eShop"
@@ -167,6 +167,35 @@ const Portfolio = () => {
                 ofereço feedback para melhorias. Colaboração e Comunicação:
                 Participo ativamente do trabalho em equipe e contribuo para a
                 documentação do projeto.
+              </p>
+            </div>
+          </div>
+          <article className="portfolio__item">
+            <div className="portfolio__item-image">
+              <img src={Dev} alt="DevLinks" />
+            </div>
+            <h3>DevLinks</h3>
+            <a
+              href="https://github.com/bootcampnet2024/eShop"
+              className="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+            <div className="btn btn-info" data-modal-target="DevModal">
+              Mais Informações
+            </div>
+          </article>
+          <div id="DevModal" className="modal">
+            <div className="modal-content">
+              <span className="close">&times;</span>
+              <h2>Informações Adicionais</h2>
+              <p>
+                O DevLinks é um projeto desenvolvido durante o programa Discover
+                da Rocketseat. Ele permite a criação de uma página personalizada
+                para compartilhar links de redes sociais, portfólio e outros
+                recursos importantes.
               </p>
             </div>
           </div>

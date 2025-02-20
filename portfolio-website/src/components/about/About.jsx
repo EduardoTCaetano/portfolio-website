@@ -1,5 +1,5 @@
 import React from "react";
-import eu from "../../assets/FotoPerfil.jpeg";
+import eu from "../../assets/EU-ETC.jpg";
 import MyCv from "../about/EduardoCaetano-Currículo.pdf";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -36,14 +36,17 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <p className="about__description">
-              Cursando atualmente o 2º ano superior do curso (AMS) em Analise e
-              Desenvolvimento de Sistemas na instituição Fatec Taquaritinga,
-              tendo já concluido o ensino tecnico em desenvolvimento de sistemas
-              na instituição Etec/Fatec Taquaritinga.
+              Sou formado no curso técnico em Desenvolvimento de Sistemas pela
+              Etec Dr. Adail Nunes da Silva (2022) e estou concluindo a
+              graduação em Análise e Desenvolvimento de Sistemas na Fatec
+              Taquaritinga (2024). Tenho experiência no desenvolvimento de APIs
+              RESTful, utilizando tecnologias como .NET Core, Angular e Docker,
+              além de participar de projetos colaborativos em ambientes ágeis.
             </p>
+
             <div className="about__info">
               <div className="about__info-title-bg">
-                <span className="about__info-title">4+</span>
+                <span className="about__info-title">5+</span>
                 <span className="about__info-name">
                   Anos <br /> estudando{" "}
                 </span>
