@@ -2,7 +2,7 @@ import React from "react";
 import "./portfolio.css";
 import LogoPortfolio from "../../assets/Eduardo-Portfolio.jpeg";
 import BwShop from "../../assets/BWShop.jpeg";
-import BTech from "../../assets/BlitzTech.jpg";
+import BTech from "../../assets/BuscaTech.jpeg";
 import eShop from "../../assets/eShop.jpg";
 import Dev from "../../assets/devlinks.jpeg";
 

@@ -1,0 +1,147 @@
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .portfolio__item {
+    background-color: #4a4949;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+  }
+  
+  .portfolio__item:hover {
+    background-color: rgba(119, 119, 119, 0.797);
+  }
+  
+  .portfolio__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+  }
+  
+  .portfolio__item h3 {
+    margin: 1.2rem 0 2rem;
+    color: var(--white-color);
+  }
+  
+  .portfolio__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--white-color);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--white-color);
+    transition: all 400ms ease;
+    padding: 0.75rem 1.2rem;
+    margin-right: 0.5rem; 
+    margin-bottom: 0.5rem; 
+  }
+  
+  .btn:hover {
+    background-color: #fff;
+    color: var(--text-color);
+    border-color: transparent;
+  }
+  
+  /* Estilo do Botão de Informações */
+  .btn-info {
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    display: inline-block;
+    margin: 4px 9px;
+    transition: all 400ms ease;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    padding: 0.75rem 1.2rem;
+  }
+  
+  .btn-info:hover {
+    color: var(--text-color);
+    border-color: transparent;
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); 
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+  }
+  
+  .modal.show {
+    display: flex; 
+    opacity: 1; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  .modal-content {
+    background-color: #222121;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Default width */
+    max-width: 600px; /* Maximum width for larger screens */
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    overflow: auto; /* Ensure scroll if content overflows */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .portfolio__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .portfolio__container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .modal-content {
+      width: 95%; 
+      padding: 15px; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .modal-content {
+      width: 100%; 
+      padding: 10px; 
+    }
+  }
+  
